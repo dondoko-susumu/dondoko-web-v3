@@ -39,5 +39,19 @@ module.exports = {
         icon: `src/images/dondoko_susumu.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-DV76CN74K6", // ここにあなたのGA4測定ID
+        ],
+        gtagConfig: {
+          anonymize_ip: true,
+        },
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
   ],
 }
