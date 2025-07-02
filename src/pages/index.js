@@ -132,69 +132,67 @@ const utmParameters = `?utm_source=homepage&utm_medium=referral&utm_campaign=don
 
 const IndexPage = () => (
   <Layout>
+    <h1>
+      どんどこすすむのホームページへようこそ！
+    </h1>
+    <h2>
+      どんどこすすむ
+    </h2>
+    <h3>漫画家</h3>
+    <StaticImage
+      src="../images/dondoko_susumu.jpg"
+      loading="eager"
+      width={300}
+      quality={95}
+      formats={["auto", "webp", "avif"]}
+      alt=""
+      style={{ marginBottom: `var(--space-3)` }}
+    />
     <div>
-      <h1>
-        どんどこすすむのホームページへようこそ！
-      </h1>
-      <h2>
-        どんどこすすむ
-      </h2>
-      <h3>漫画家</h3>
-      <StaticImage
-        src="../images/dondoko_susumu.jpg"
-        loading="eager"
-        width={300}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <div>
-        <h3>略歴</h3>
-        <p>
-          1981.03 大阪生まれ<br/>
-          大阪芸大中退。<br/>
-          東京で就職し結婚。<br/>
-          以来、東京でエンジニアとして働く。<br/>
-          家族は妻と子供2人。<br/>
-          趣味はゲームとスポーツ。<br/>
-          2022.09 会社を辞めて漫画を描き始める。<br/>
-          2023.07 コルクマンガ専科8期<br/>
-          2024.04 ひらめきマンガ教室7期<br/>
-          2025.04 病院清掃の仕事をしながら専業漫画家を目指している<br/>
-        </p>
-      </div>
-      <ul className={styles.list}>
-        <h3>受賞歴</h3>
-        {awardlinks.map(link => (
-          <li key={link.url} className={styles.listItem}>
-            <a
-              className={styles.listItemLink}
-              href={`${link.url}${utmParameters}`}
-              target="_blank"
-            >
-              {link.text}
-            </a>
-            <p className={styles.listItemDescription}>{link.description}</p>
-          </li>
-        ))}
-      </ul>
-      <ul className={styles.list}>
-        <h3>インタビュー</h3>
-        {interviewlinks.map(link => (
-          <li key={link.url} className={styles.listItem}>
-            <a
-              className={styles.listItemLink}
-              href={`${link.url}${utmParameters}`}
-              target="_blank"
-            >
-              {link.text}
-            </a>
-            <p className={styles.listItemDescription}>{link.description}</p>
-          </li>
-        ))}
-      </ul>
+      <h3>略歴</h3>
+      <p>
+        1981.03 大阪生まれ<br/>
+        大阪芸大中退。<br/>
+        東京で就職し結婚。<br/>
+        以来、東京でエンジニアとして働く。<br/>
+        家族は妻と子供2人。<br/>
+        趣味はゲームとスポーツ。<br/>
+        2022.09 会社を辞めて漫画を描き始める。<br/>
+        2023.07 コルクマンガ専科8期<br/>
+        2024.04 ひらめきマンガ教室7期<br/>
+        2025.04 病院清掃の仕事をしながら専業漫画家を目指している<br/>
+      </p>
     </div>
+    <ul className={styles.list}>
+      <h3>受賞歴</h3>
+      {awardlinks.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+            target="_blank"
+          >
+            {link.text}
+          </a>
+          <p className={styles.listItemDescription}>{link.description}</p>
+        </li>
+      ))}
+    </ul>
+    <ul className={styles.list}>
+      <h3>インタビュー</h3>
+      {interviewlinks.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+            target="_blank"
+          >
+            {link.text}
+          </a>
+          <p className={styles.listItemDescription}>{link.description}</p>
+        </li>
+      ))}
+    </ul>
     <ul className={styles.list}>
       <h3>SNS</h3>
       {links.map(link => (
@@ -218,7 +216,6 @@ const IndexPage = () => (
     >
       kkbt2003@gmail.com
     </a>
-
   </Layout>
 )
 
