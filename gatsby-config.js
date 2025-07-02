@@ -13,7 +13,7 @@ module.exports = {
     description: `どんどこすすむ公式ホームページ`,
     author: `@dondoko_susumu`,
     siteURL: 'https://xn--28jma5da5l6e.com/',
-    image: `${__dirname}src/images/dondoko_susumu.jpg`,
+    image: `https://xn--28jma5da5l6e.com/ogp.png`,
   },
   plugins: [
     `gatsby-plugin-image`,
