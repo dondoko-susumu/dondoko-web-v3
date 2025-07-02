@@ -208,7 +208,7 @@ const IndexPage = () => (
         </li>
       ))}
     </ul>
-    <h3>お問い合わせ</h3>
+    <h3>連絡</h3>
     <a
       className={styles.listItemLink}
       href={`mailto:kkbt2003@gmail.com`}
