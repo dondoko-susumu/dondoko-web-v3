@@ -47,6 +47,21 @@ const interviewlinks = [
   },
 ]
 
+const worklinks = [
+  {
+    text: "2024.08 TeamHub / イラスト",
+    url: "https://cp.tmhub.jp/soccer-lp/",
+    description:
+      "",
+  },
+  {
+    text: "2024.05 チームナビメディア / イラスト",
+    url: "https://teamnavi.joynup.jp/2024/05/30/005003/",
+    description:
+      "",
+  },
+]
+
 const links = [
   {
     text: "Pixiv",
@@ -171,6 +186,7 @@ const IndexPage = () => (
             className={styles.listItemLink}
             href={`${link.url}${utmParameters}`}
             target="_blank"
+            rel="noreferrer"
           >
             {link.text}
           </a>
@@ -186,6 +202,23 @@ const IndexPage = () => (
             className={styles.listItemLink}
             href={`${link.url}${utmParameters}`}
             target="_blank"
+            rel="noreferrer"
+          >
+            {link.text}
+          </a>
+          <p className={styles.listItemDescription}>{link.description}</p>
+        </li>
+      ))}
+    </ul>
+    <ul className={styles.list}>
+      <h3>その他の仕事</h3>
+      {worklinks.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+            target="_blank"
+            rel="noreferrer"
           >
             {link.text}
           </a>
@@ -201,6 +234,7 @@ const IndexPage = () => (
             className={styles.listItemLink}
             href={`${link.url}${utmParameters}`}
             target="_blank"
+            rel="noreferrer"
           >
             {link.text}
           </a>
@@ -213,6 +247,7 @@ const IndexPage = () => (
       className={styles.listItemLink}
       href={`mailto:kkbt2003@gmail.com`}
       target="_blank"
+      rel="noreferrer"
     >
       kkbt2003@gmail.com
     </a>
