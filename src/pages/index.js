@@ -9,61 +9,61 @@ import * as styles from "../components/index.module.css"
 const oneshots = [
   {
     text: "2025.02 「もーれつ課長澤部」",
-    url: "https://www.pixiv.net/artworks/128512134#1",
+    url: "https://www.pixiv.net/artworks/128512134",
     description:
       "昭和でもない令和でもない平成の課長が世代の間で奮闘する話。",
   },
   {
     text: "2024.11 「みのり」",
-    url: "https://www.pixiv.net/artworks/124747739#1",
+    url: "https://www.pixiv.net/artworks/124747739",
     description:
       "子供から見たコロナの話。",
   },
   {
     text: "2024.11 「Your Light」",
-    url: "https://www.pixiv.net/artworks/124113864#1",
+    url: "https://www.pixiv.net/artworks/124113864",
     description:
       "初めてできた彼女がへんな宗教にハマってた話。",
   },
   {
     text: "2024.09 「タイチの涙」",
-    url: "https://www.pixiv.net/artworks/122150144#1",
+    url: "https://www.pixiv.net/artworks/122150144",
     description:
       "不思議な力を持った涙を流す巨大なおじさんの話。",
   },
   {
     text: "2024.07 「最期の火花」",
-    url: "https://www.pixiv.net/artworks/121053801#1",
+    url: "https://www.pixiv.net/artworks/121053801",
     description:
       "死の間際に瀕した父親が最期に想い浮かべた人物とは...",
   },
   {
     text: "2024.07 「河川敷レトロ」",
-    url: "https://www.pixiv.net/artworks/120491303#1",
+    url: "https://www.pixiv.net/artworks/120491303",
     description:
       "強い女の子と弱い男の子の話。",
   },
   {
     text: "2024.06 「親子ドリブル」",
-    url: "https://www.pixiv.net/artworks/119445862#1",
+    url: "https://www.pixiv.net/artworks/119445862",
     description:
       "子供のサッカーに過剰に干渉する親の話。",
   },
   {
     text: "2024.05 「サムライと漫画家志望」",
-    url: "https://www.pixiv.net/artworks/116829152#1",
-    description:
-      "元プロボクサーの父親とプロレス大好きな息子が対決する話。",
-  },
-  {
-    text: "2024.03 「鬼っこレスラー」",
-    url: "https://www.pixiv.net/artworks/118335945#1",
+    url: "https://www.pixiv.net/artworks/118335945",
     description:
       "女の子を描きたくない漫画家志望の話。",
   },
   {
+    text: "2024.03 「鬼っこレスラー」",
+    url: "https://www.pixiv.net/artworks/116829152",
+    description:
+      "元プロボクサーの父親とプロレス大好きな息子が対決する話。",
+  },
+  {
     text: "2023.01 「Satellite - サテライト -」",
-    url: "https://www.pixiv.net/artworks/104687029#1",
+    url: "https://www.pixiv.net/artworks/104687029",
     description:
       "年に1点しかゴールを決められないフォワードの話。",
   },
@@ -81,20 +81,20 @@ const etcLinks = [
   {
     text: "2023.04 「どんどこすすむすすむくん」",
     url: "https://www.pixiv.net/user/1758/series/193473",
-    description:
-      "リーゼント頭をした次世代型AIロボットどんどこすすむくん。子供向け漫画。",
+    // description:
+    //   "リーゼント頭をした次世代型AIロボットどんどこすすむくん。子供向け漫画。",
   },
   {
     text: "2023.07 コルクマンガ専科",
     url: "https://www.pixiv.net/user/1758/series/211385",
-    description:
-      "コルクマンガ専科の課題で描いた4コマ漫画など。",
+    // description:
+    //   "コルクマンガ専科の課題で描いた4コマ漫画など。",
   },
   {
     text: "2020.07〜 どんどこすすむダジャレイラスト",
     url: "https://www.pixiv.net/tags/%E3%81%A9%E3%82%93%E3%81%A9%E3%81%93%E3%81%99%E3%81%99%E3%82%80%E3%83%80%E3%82%B8%E3%83%A3%E3%83%AC/artworks",
-    description:
-      "どんどこすすむダジャレイラストシリーズ。不定期更新中。",
+    // description:
+    //   "どんどこすすむダジャレイラストシリーズ。不定期更新中。",
   },
   {
     text: "2024.05 チームナビメディア / イラスト",
@@ -153,8 +153,8 @@ const interviewlinks = [
   {
     text: "2019.04 エンジニア時代のインタビュー",
     url: "https://www.wantedly.com/companies/linksports/post_articles/128004",
-    description:
-      "おまけ。エンジニア時代の貴重なインタビュー。",
+    // description:
+    //   "おまけ。エンジニア時代の貴重なインタビュー。",
   },
 ]
 
