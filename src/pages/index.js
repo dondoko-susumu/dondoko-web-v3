@@ -70,7 +70,7 @@ const oneshots = [
 ]
 
 // その他の漫画やイラスト
-const etclinks = [
+const etcLinks = [
   
   {
     text: "2023.03〜 「なにもしらずにどんどこすすむ」",
