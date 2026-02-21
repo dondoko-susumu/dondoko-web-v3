@@ -243,9 +243,11 @@ const utmParameters = `?utm_source=homepage&utm_medium=referral&utm_campaign=don
 
 const IndexPage = () => (
   <Layout>
-    <h1>
-      どんどこすすむのホームページへようこそ！
-    </h1>
+    <div className={styles.hero}>
+      <h1 className={styles.heroTitle}>
+        どんどこすすむのホームページへようこそ！
+      </h1>
+    </div>
     <h2>
       どんどこすすむ
     </h2>

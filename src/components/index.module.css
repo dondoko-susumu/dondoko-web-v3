@@ -1,3 +1,15 @@
+.hero {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.2rem, 6vw, 3.2rem);
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
 .list {
   display: block;
   margin: 0;
