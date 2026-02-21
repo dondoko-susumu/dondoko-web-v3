@@ -5,6 +5,111 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
+// 読切
+const oneshots = [
+  {
+    text: "2025.02 「もーれつ課長澤部」",
+    url: "https://www.pixiv.net/artworks/128512134#1",
+    description:
+      "昭和でもない令和でもない平成の課長が世代の間で奮闘する話。",
+  },
+  {
+    text: "2024.11 「みのり」",
+    url: "https://www.pixiv.net/artworks/124747739#1",
+    description:
+      "子供から見たコロナの話。",
+  },
+  {
+    text: "2024.11 「Your Light」",
+    url: "https://www.pixiv.net/artworks/124113864#1",
+    description:
+      "初めてできた彼女がへんな宗教にハマってた話。",
+  },
+  {
+    text: "2024.09 「タイチの涙」",
+    url: "https://www.pixiv.net/artworks/122150144#1",
+    description:
+      "不思議な力を持った涙を流す巨大なおじさんの話。",
+  },
+  {
+    text: "2024.07 「最期の火花」,",
+    url: "https://www.pixiv.net/artworks/121053801#1",
+    description:
+      "死の間際に瀕した父親が最期に想い浮かべた人物とは...",
+  },
+  {
+    text: "2024.07 「河川敷レトロ」,",
+    url: "https://www.pixiv.net/artworks/120491303#1",
+    description:
+      "強い女の子と弱い男の子の話。",
+  },
+  {
+    text: "2024.06 「親子ドリブル」,",
+    url: "https://www.pixiv.net/artworks/119445862#1",
+    description:
+      "子供のサッカーに過剰に干渉する親の話。",
+  },
+  {
+    text: "2024.05 「サムライと漫画家志望」,",
+    url: "https://www.pixiv.net/artworks/116829152#1",
+    description:
+      "元プロボクサーの父親とプロレス大好きな息子が対決する話。",
+  },
+  {
+    text: "2024.03 「鬼っこレスラー」,",
+    url: "https://www.pixiv.net/artworks/118335945#1",
+    description:
+      "女の子を描きたくない漫画家志望の話。",
+  },
+  {
+    text: "2023.01 「Satellite - サテライト -」,",
+    url: "https://www.pixiv.net/artworks/104687029#1",
+    description:
+      "年に1点しかゴールを決められないフォワードの話。",
+  },
+]
+
+// その他の漫画やイラスト
+const etclinks = [
+  
+  {
+    text: "2023.03〜 「なにもしらずにどんどこすすむ」",
+    url: "https://www.pixiv.net/user/1758/series/220301",
+    description:
+      "どんどこすすむがプロの漫画家を志すエッセイ漫画。不定期連載中。",
+  },
+  {
+    text: "2023.04 「どんどこすすむすすむくん」",
+    url: "https://www.pixiv.net/user/1758/series/193473",
+    description:
+      "リーゼント頭をした次世代型AIロボットどんどこすすむくん。子供向け漫画。",
+  },
+  // {
+  //   text: "2023.07 コルクマンガ専科",
+  //   url: "https://www.pixiv.net/user/1758/series/211385",
+  //   description:
+  //     "コルクマンガ専科の課題で描いた4コマ漫画など。",
+  // },
+  {
+    text: "2020.07〜 どんどこすすむダジャレイラスト",
+    url: "https://www.pixiv.net/user/1758/series/211385",
+    description:
+      "どんどこすすむダジャレイラストシリーズ。不定期更新中。",
+  },
+  {
+    text: "2024.05 チームナビメディア / イラスト",
+    url: "https://teamnavi.joynup.jp/2024/05/30/005003/",
+    description:
+      "",
+  },
+  {
+    text: "2024.08 TeamHub / イラスト",
+    url: "https://cp.tmhub.jp/soccer-lp/",
+    description:
+      "",
+  },
+]
+
 const awardlinks = [
   {
     text: "2025.03 第7回 ゲンロン ひらめき☆マンガ大賞 読者賞",
@@ -42,21 +147,6 @@ const interviewlinks = [
   {
     text: "2024.09「河川敷レトロ」 / リアルサウンドブック",
     url: "https://realsound.jp/book/2024/09/post-1792381.html",
-    description:
-      "",
-  },
-]
-
-const worklinks = [
-  {
-    text: "2024.08 TeamHub / イラスト",
-    url: "https://cp.tmhub.jp/soccer-lp/",
-    description:
-      "",
-  },
-  {
-    text: "2024.05 チームナビメディア / イラスト",
-    url: "https://teamnavi.joynup.jp/2024/05/30/005003/",
     description:
       "",
   },
@@ -175,11 +265,52 @@ const IndexPage = () => (
         2022.09 会社を辞めて漫画を描き始める。<br/>
         2023.07 コルクマンガ専科8期<br/>
         2024.04 ひらめきマンガ教室7期<br/>
-        2025.04 病院清掃の仕事をしながら専業漫画家を目指している<br/>
+        現在、バイトをしながら専業漫画家を目指している<br/>
       </p>
     </div>
+    <h3>作品一覧</h3>
+    <h4>読切</h4>
     <ul className={styles.list}>
-      <h3>受賞歴</h3>
+      {oneshots.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {link.text}
+          </a>
+          {link.description && (
+            <p className={styles.listItemDescription}>
+              {link.description}
+            </p>
+          )}
+        </li>
+      ))}
+    </ul>
+    <h4>その他の漫画やイラスト</h4>
+    <ul className={styles.list}>
+      {etcLinks.map(link => (
+        <li key={link.url} className={styles.listItem}>
+          <a
+            className={styles.listItemLink}
+            href={`${link.url}${utmParameters}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {link.text}
+          </a>
+          {link.description && (
+            <p className={styles.listItemDescription}>
+              {link.description}
+            </p>
+          )}
+        </li>
+      ))}
+    </ul>
+    <h3>受賞歴</h3>
+    <ul className={styles.list}>
       {awardlinks.map(link => (
         <li key={link.url} className={styles.listItem}>
           <a
@@ -190,12 +321,16 @@ const IndexPage = () => (
           >
             {link.text}
           </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
+          {link.description && (
+            <p className={styles.listItemDescription}>
+              {link.description}
+            </p>
+          )}
         </li>
       ))}
     </ul>
+    <h3>インタビュー</h3>
     <ul className={styles.list}>
-      <h3>インタビュー</h3>
       {interviewlinks.map(link => (
         <li key={link.url} className={styles.listItem}>
           <a
@@ -210,24 +345,8 @@ const IndexPage = () => (
         </li>
       ))}
     </ul>
+    <h3>SNS</h3>
     <ul className={styles.list}>
-      <h3>その他の仕事</h3>
-      {worklinks.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {link.text}
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    <ul className={styles.list}>
-      <h3>SNS</h3>
       {links.map(link => (
         <li key={link.url} className={styles.listItem}>
           <a
@@ -238,7 +357,11 @@ const IndexPage = () => (
           >
             {link.text}
           </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
+          {link.description && (
+            <p className={styles.listItemDescription}>
+              {link.description}
+            </p>
+          )}
         </li>
       ))}
     </ul>
