@@ -286,8 +286,7 @@ const IndexPage = () => (
             <a
               className={styles.listItemLink}
               href={`${link.url}${utmParameters}`}
-              // target="_blank"
-              // rel="noreferrer"
+              target="_blank"
             >
               {link.text}
             </a>
@@ -307,7 +306,6 @@ const IndexPage = () => (
               className={styles.listItemLink}
               href={`${link.url}${utmParameters}`}
               target="_blank"
-              rel="noreferrer"
             >
               {link.text}
             </a>
@@ -329,7 +327,6 @@ const IndexPage = () => (
               className={styles.listItemLink}
               href={`${link.url}${utmParameters}`}
               target="_blank"
-              rel="noreferrer"
             >
               {link.text}
             </a>
@@ -351,7 +348,6 @@ const IndexPage = () => (
               className={styles.listItemLink}
               href={`${link.url}${utmParameters}`}
               target="_blank"
-              rel="noreferrer"
             >
               {link.text}
             </a>
@@ -369,7 +365,6 @@ const IndexPage = () => (
               className={styles.listItemLink}
               href={`${link.url}${utmParameters}`}
               target="_blank"
-              rel="noreferrer"
             >
               {link.text}
             </a>
@@ -388,7 +383,6 @@ const IndexPage = () => (
         className={styles.listItemLink}
         href={`mailto:kkbt2003@gmail.com`}
         target="_blank"
-        rel="noreferrer"
       >
         kkbt2003@gmail.com
       </a>
