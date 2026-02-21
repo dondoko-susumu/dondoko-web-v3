@@ -239,7 +239,8 @@ const links = [
   },
 ]
 
-const utmParameters = `?utm_source=homepage&utm_medium=referral&utm_campaign=dondoko_susumu`
+// const utmParameters = `?utm_source=homepage&utm_medium=referral&utm_campaign=dondoko_susumu`
+const utmParameters = ""
 
 const IndexPage = () => (
   <Layout>
