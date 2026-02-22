@@ -8,105 +8,108 @@ import * as styles from "../components/index.module.css"
 // 読切
 const oneshots = [
   {
-    text: "2025.02 「もーれつ課長澤部」",
+    text: "「もーれつ課長澤部」",
     url: "https://www.pixiv.net/artworks/128512134",
     description:
-      "昭和でもない令和でもない平成の課長が世代の間で奮闘する話。",
+      "昭和でもない令和でもない平成の課長が世代の間で奮闘する話。2025.02",
   },
   {
-    text: "2024.11 「みのり」",
+    text: "「みのり」",
     url: "https://www.pixiv.net/artworks/124747739",
     description:
-      "子供から見たコロナの話。",
+      "子供から見たコロナの話。2024.11",
   },
   {
-    text: "2024.11 「Your Light」",
+    text: "「Your Light」",
     url: "https://www.pixiv.net/artworks/124113864",
     description:
-      "初めてできた彼女がへんな宗教にハマってた話。",
+      "初めてできた彼女がへんな宗教にハマってた話。2024.11",
   },
   {
-    text: "2024.09 「タイチの涙」",
+    text: "「タイチの涙」",
     url: "https://www.pixiv.net/artworks/122150144",
     description:
-      "不思議な力を持った涙を流す巨大なおじさんの話。",
+      "不思議な力を持った涙を流す巨大なおじさんの話。2024.09 ",
   },
   {
-    text: "2024.07 「最期の火花」",
+    text: "「最期の火花」",
     url: "https://www.pixiv.net/artworks/121053801",
     description:
-      "死の間際に瀕した父親が最期に想い浮かべた人物とは...",
+      "死の間際に瀕した父親が最期に想い浮かべた人物とは...。2024.07",
   },
   {
-    text: "2024.07 「河川敷レトロ」",
+    text: "「河川敷レトロ」",
     url: "https://www.pixiv.net/artworks/120491303",
     description:
-      "強い女の子と弱い男の子の話。",
+      "強い女の子と弱い男の子の話。2024.07",
   },
   {
-    text: "2024.06 「親子ドリブル」",
+    text: "「親子ドリブル」",
     url: "https://www.pixiv.net/artworks/119445862",
     description:
-      "子供のサッカーに過剰に干渉する親の話。",
+      "子供のサッカーに過剰に干渉する親の話。2024.06",
   },
   {
-    text: "2024.05 「サムライと漫画家志望」",
+    text: "「サムライと漫画家志望」",
     url: "https://www.pixiv.net/artworks/118335945",
     description:
-      "女の子を描きたくない漫画家志望の話。",
+      "女の子を描きたくない漫画家志望の話。2024.05",
   },
   {
-    text: "2024.03 「鬼っこレスラー」",
+    text: "「鬼っこレスラー」",
     url: "https://www.pixiv.net/artworks/116829152",
     description:
-      "元プロボクサーの父親とプロレス大好きな息子が対決する話。",
+      "元プロボクサーの父親とプロレス大好きな息子が対決する話。2024.03",
   },
   {
-    text: "2023.01 「Satellite - サテライト -」",
+    text: "「Satellite - サテライト -」",
     url: "https://www.pixiv.net/artworks/104687029",
     description:
-      "年に1点しかゴールを決められないフォワードの話。",
+      "年に1点しかゴールを決められないフォワードの話。2023.01",
   },
 ]
 
-// その他の漫画やイラスト
-const etcLinks = [
-  
+// その他の漫画
+const etcLinks = [  
   {
-    text: "2023.03〜 「なにもしらずにどんどこすすむ」",
+    text: "コルクマンガ専科",
+    url: "https://www.pixiv.net/user/1758/series/211385",
+    description:
+      "コルクマンガ専科の課題で描いた4コマ漫画など。2023.07",
+  },
+  {
+    text: "「どんどこすすむすすむくん」",
+    url: "https://www.pixiv.net/user/1758/series/193473",
+    description:
+      "リーゼント頭をした次世代型AIロボットどんどこすすむくん。子供向け漫画。2023.04",
+  },
+  {
+    text: "「なにもしらずにどんどこすすむ」",
     url: "https://www.pixiv.net/user/1758/series/220301",
     description:
-      "どんどこすすむがプロの漫画家を志すエッセイ漫画。不定期連載中。",
+      "どんどこすすむがプロの漫画家を志すエッセイ漫画。不定期連載中。2023.03〜",
   },
+]
+
+  // イラスト
+const illustLinks = [
   {
-    text: "2023.04 「どんどこすすむすすむくん」",
-    url: "https://www.pixiv.net/user/1758/series/193473",
-    // description:
-    //   "リーゼント頭をした次世代型AIロボットどんどこすすむくん。子供向け漫画。",
-  },
-  {
-    text: "2023.07 コルクマンガ専科",
-    url: "https://www.pixiv.net/user/1758/series/211385",
-    // description:
-    //   "コルクマンガ専科の課題で描いた4コマ漫画など。",
-  },
-  {
-    text: "2020.07〜 どんどこすすむダジャレイラスト",
-    url: "https://www.pixiv.net/tags/%E3%81%A9%E3%82%93%E3%81%A9%E3%81%93%E3%81%99%E3%81%99%E3%82%80%E3%83%80%E3%82%B8%E3%83%A3%E3%83%AC/artworks",
-    // description:
-    //   "どんどこすすむダジャレイラストシリーズ。不定期更新中。",
-  },
-  {
-    text: "2024.05 チームナビメディア / イラスト",
-    url: "https://teamnavi.joynup.jp/2024/05/30/005003/",
-    description:
-      "",
-  },
-  {
-    text: "2024.08 TeamHub / イラスト",
+    text: "TeamHub サッカーユーザー向けLP",
     url: "https://cp.tmhub.jp/soccer-lp/",
     description:
-      "",
+      "2024.08",
+  },
+  {
+    text: "チームナビメディア",
+    url: "https://teamnavi.joynup.jp/2024/05/30/005003/",
+    description:
+      "いろんな種類のダンクのイラスト。2024.05",
+  },
+  {
+    text: "どんどこすすむダジャレ",
+    url: "https://www.pixiv.net/tags/%E3%81%A9%E3%82%93%E3%81%A9%E3%81%93%E3%81%99%E3%81%99%E3%82%80%E3%83%80%E3%82%B8%E3%83%A3%E3%83%AC/artworks",
+    description:
+      "どんどこすすむダジャレイラストシリーズ。LINEスタンプで発売予定。不定期更新中。2020.07〜",
   },
 ]
 
@@ -298,9 +301,28 @@ const IndexPage = () => (
           </li>
         ))}
       </ul>
-      <h4>その他の漫画やイラスト</h4>
+      <h4>その他の漫画</h4>
       <ul className={styles.list}>
         {etcLinks.map(link => (
+          <li key={link.url} className={styles.listItem}>
+            <a
+              className={styles.listItemLink}
+              href={`${link.url}${utmParameters}`}
+              target="_blank"
+            >
+              {link.text}
+            </a>
+            {link.description && (
+              <p className={styles.listItemDescription}>
+                {link.description}
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+      <h4>イラスト</h4>
+      <ul className={styles.list}>
+        {illustLinks.map(link => (
           <li key={link.url} className={styles.listItem}>
             <a
               className={styles.listItemLink}
